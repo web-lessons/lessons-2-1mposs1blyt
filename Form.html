@@ -5,26 +5,89 @@
 <body>
 
 
-<form action="https://proxy.kp87.ru/send-form.php">
-    <INPUT type="hidden" name="to" value="alexandr.bryaginya@gmail.com">
-    <input type="submit">
+<form method="post" action="https://proxy.kp87.ru/send-form.php">
+    <fieldset>
+        <legend>Группа полей</legend>
+        <table>
+            <tr>
+                <td>
+                    <input type="datetime-local" value="Время" name="Время?">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="color" value="Цвет" name="Цвет?">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <textarea NAME="Отзыв" cols="18" rows="12">
 
+                </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="select[]" multiple size="5">
+                    <optgroup label="Группа 1">
+                        <option value="Опция 1">Опция 1</option>
+                        <option value="Опция 2">Опция 2</option>
+                        <option value="Опция 3">Опция 3</option>
+                    </optgroup>
+                    <optgroup label="Группа 2">
+                        <option value="Опция 4">Опция 4</option>
+                        <option value="Опция 5">Опция 5</option>
+                        <option value="Опция 6">Опция 6</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <TD>
+                    <label><input type="radio" name="radio" value="1">Радио 1</label>
+                    <label><input type="radio" name="radio" value="2">Радио 2</label>
+                    <label><input type="radio" name="radio" value="3">Радио 3</label>
+
+                </TD>
+            <tr>
+
+            <tr>
+                <TD>
+                    <input required size="6" type="checkbox" id="9873" value="TRue" name="ch2">
+                    <label for="9873"><---Галочку</label>
+                    <label for="9872"> Чекбокс</label>
+                    <input id="9872" type="checkbox" value="FAlse" name="Ch1">
+                </TD>
+            <tr>
+                <TD>
+                    <input required size="6" placeholder="Число" type="number" MIN="-5" max="9999">
+                </TD>
+            </tr>
+            <tr>
+                <TD>
+                    <input name="file" value="" required size="9" placeholder="Файл" type="file" accept="image/gif">
+                </TD>
+            </tr>
+            <tr>
+                <td>
+                    <input required type="text" name="Login" placeholder="Login" size="8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input required type="password" name="Password" value="" placeholder="Password" size="12">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input required type="submit" value="НАЖМИ:)">
+                    <input type="reset" value="Не жми#)*&!">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <INPUT type="hidden" name="to" value="alexandr.bryaginya@gmail.com">
 </form>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
